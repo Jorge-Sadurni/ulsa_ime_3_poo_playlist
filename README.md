@@ -8,8 +8,7 @@ Llena cada espacio conforme avances en las fases de [PRACTICA.md](PRACTICA.md).
 
 **1.1 El problema con mis propias palabras**
 
-El reto es hacer una aplicacion de musica que maneje (canciones) y (podcast) en (playlist), donde cada (pista) una tiene (duracion) y titulo. La cancion tiene artistas y genero, mientras que los podcast tienen anfitrion y numero de episodio. Finalmente la playlist playlist tiene nombre, reúne pistas que ya existen en la
-biblioteca y reporta su duración total.
+El reto es hacer una aplicacion de musica que maneje (canciones) y (podcast) en (playlist), donde cada (pista)  tiene (duracion) y titulo. La cancion tiene artistas y genero, mientras que los podcast tienen anfitrion y numero de episodio. Finalmente la playlist reúne pistas que ya existen en la biblioteca y reporta su duración total.
 
 **1.2 Sustantivos (posibles clases) y verbos (posibles métodos)**
 
@@ -92,7 +91,7 @@ Experimento 3, un objeto en dos playlists: La diferencia entre el * y & es que e
 | 1 |  Validador de espacio en titulo | Agrege una validacion de espacios en Pista  | Si hay una entrada vacia y con espacios en el titulo no la valida
 | 2 | Limite de Tiempo | Agrege un validador de tiempo en duracion | Como metodo de control agrege un tope de minutos para podcast y cancionpara delimitar la duracion |
 
-Retos opcionales que intenté: _____
+Retos opcionales que intenté: Una buena mejora podria ser categorizar alfabeticamente las pistas en la playlist.
 
 ## Fase 5. Publicar en GitHub
 
@@ -104,8 +103,10 @@ Retos opcionales que intenté: _____
 
 **6.1 ¿Qué aprendiste en esta práctica?**
 
-[Inserta aquí tu respuesta]
+En esta practica aprendi sobre las diferentes relaciones que hay, asi como se heredan sus atributos y metodos para poder reciclar 
+codigo significativamente y hcaer un sistema mucho mas dinamico. Por otro lado, aprendi mas sobre la sintaxis en Programacion 
+Orientada a Objetos en los archivos .h y .cpp. Finalmente aprendi a llevar al codigo a sus fallas y poder resolverlas y mejorarlas.
 
-**6.2 ¿Qué cambiarías de tu proceso la próxima vez?**
+**6.2 ¿Qué cambiarías de tu proceso la próxima vez?*
 
-[Inserta aquí tu respuesta]
+Esperaria ser mas capaz y tener la hablidad de tener los suficientes conocimientos de sintaxis para que el proceso sea mucho mas fluido.
