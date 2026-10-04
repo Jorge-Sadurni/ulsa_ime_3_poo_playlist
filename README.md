@@ -16,15 +16,7 @@ Sustantivos: 5
 
 Verbos: 4
 
--GuardarMinutos()
--AgregarArtista() 
--AgregarGenero()
--AgregarAnfitrion()
--AgregarNoEp()
--AgregarPista()
--CalcularDuracion()
--GetDuracion
--GetNombre
+agregarCancion(), agregarPodcast(), totalSegundos(), mostrar(), mostrarInfo(), imprimir().
 
 
 **1.3 Relaciones** (completa con "es un", "tiene un" o "usa un")
@@ -49,7 +41,7 @@ Verbos: 4
 | Podcast - Pista | Herencia | Un podcast es una pista, podcast hereda los atributos de Pista, y defines sus propios. |
 | Pista - Duracion | Composicion | Una pista tiene una duracion y pista obtiene ese valor con la relacion de duracion.|
 | Playlist - Cancion | Indirecta | No estan conectadas directamente porque Playlist no necesita saber sobre Cancion. |
-| Playlist - Podcast | Indirecta | No estan conectadas directamente porque Playlist no necesita saber sobre Podcast. |
+| Playlist - Podcast | Indirecta |Una playlist agrupa punteros a postas que viven de forma externa |
 
 ## Fase 3. Implementar
 
@@ -63,11 +55,11 @@ Verbos: 4
 
 **3.2 Experimentos guiados**
 
-Experimento 1, orden de construcción y destrucción: 1.-Duracion 2.-Pista 3.-Cancion
+Experimento 1, orden de construcción y destrucción: 1.-Duracion 2.-Pista 3.-Cancion y el orden de destrucción es: 1.-Cancion 2.-Pista 3.-Duracion.
 
 Experimento 2, ¿quién es dueño de quién?: En esta relacion no hay dueño absoluto ya que es un tipo indirecto de relacion, cancion vive dentro del main y mantiene su propia vida
 
-Experimento 3, un objeto en dos playlists: La diferencia entre el * y & es que el & sirve para mandar una direccion al metodo de agregarCancion, donde * recibe la direccion
+Experimento 3, un objeto en dos playlists: El ampersand (&) actúa como el operador de dirección para extraer la ubicación de la canción en el main, mientras que el asterisco (*) actúa en la firma del método como un puntero diseñado para recibir y almacenar dicha dirección.
 
 ## Fase 4. Probar y mejorar
 
@@ -89,7 +81,7 @@ Experimento 3, un objeto en dos playlists: La diferencia entre el * y & es que e
 | # | Falla o mejora detectada | Qué cambié | Por qué |
 | --- | --- | --- | --- |
 | 1 |  Validador de espacio en titulo | Agrege una validacion de espacios en Pista  | Si hay una entrada vacia y con espacios en el titulo no la valida
-| 2 | Limite de Tiempo | Agrege un validador de tiempo en duracion | Como metodo de control agrege un tope de minutos para podcast y cancionpara delimitar la duracion |
+| 2 | Limite de Tiempo | Agrege un validador de tiempo en duracion | Como metodo de control agrege un tope de minutos para podcast y cancion para delimitar la duracion |
 
 Retos opcionales que intenté: Una buena mejora podria ser categorizar alfabeticamente las pistas en la playlist.
 
