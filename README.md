@@ -41,7 +41,7 @@ agregarCancion(), agregarPodcast(), totalSegundos(), mostrar(), mostrarInfo(), i
 | Podcast - Pista | Herencia | Un podcast es una pista, podcast hereda los atributos de Pista, y defines sus propios. |
 | Pista - Duracion | Composicion | Una pista tiene una duracion y pista obtiene ese valor con la relacion de duracion.|
 | Playlist - Cancion | Indirecta | No estan conectadas directamente porque Playlist no necesita saber sobre Cancion. |
-| Playlist - Podcast | Indirecta |Una playlist agrupa punteros a postas que viven de forma externa |
+| Playlist - Podcast | Indirecta |Una playlist agrupa punteros a pistas que viven de forma externa |
 
 ## Fase 3. Implementar
 
@@ -89,7 +89,7 @@ Retos opcionales que intenté: Una buena mejora podria ser categorizar alfabetic
 
 **5.1 Enlace a mi fork**
 
-[Inserta aquí el enlace a tu fork]
+[(https://github.com/Jorge-Sadurni/ulsa_ime_3_poo_playlist/blob/main/README.md)]
 
 ## Cierre y reflexión
 
