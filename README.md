@@ -14,7 +14,7 @@ El reto es hacer una aplicacion de musica que maneje (canciones) y (podcast) en 
 
 Sustantivos: 5
 
-Verbos: 4
+Verbos: 6
 
 agregarCancion(), agregarPodcast(), totalSegundos(), mostrar(), mostrarInfo(), imprimir().
 
@@ -30,7 +30,7 @@ agregarCancion(), agregarPodcast(), totalSegundos(), mostrar(), mostrarInfo(), i
 
 **2.1 Diagrama de clases**
 
-![Diagrama de clases](diseño_solucion (1).png)
+![Diagrama de clases](diseño_solucion.png)
 **Pista es la clase base mientras que cancion y podcast son clase derivadas (Herencia). Por otro lado, duracion es una clase composicion de Pista y Playlist es una clase de agregacion de Pista.
 
 **2.2 Justificación de cada relación**
@@ -41,7 +41,7 @@ agregarCancion(), agregarPodcast(), totalSegundos(), mostrar(), mostrarInfo(), i
 | Podcast - Pista | Herencia | Un podcast es una pista, podcast hereda los atributos de Pista, y defines sus propios. |
 | Pista - Duracion | Composicion | Una pista tiene una duracion y pista obtiene ese valor con la relacion de duracion.|
 | Playlist - Cancion | Indirecta | No estan conectadas directamente porque Playlist no necesita saber sobre Cancion. |
-| Playlist - Podcast | Indirecta |Una playlist agrupa punteros a pistas que viven de forma externa |
+| Playlist - Podcast | Indirecta |Una playlist agrupa punteros a pistas que viven de forma externa. |
 
 ## Fase 3. Implementar
 
@@ -49,15 +49,15 @@ agregarCancion(), agregarPodcast(), totalSegundos(), mostrar(), mostrarInfo(), i
 
 | # | Duda | Cómo la resolví | Fuente |
 | --- | --- | --- | --- |
-| 1 | sintaxis en archivos .h | Con el prompt de E-R-A fui aprendiendo y corrigiendo hasta que los errores fueran borrandose | Gemini |
-| 2 | Sintaxis en archivos .cpp | Con el prompt de E-R-A fui aprendiendo y corrigiendo hasta que los errores fueran borrandose | Gemini |
-| 3 | Relacion entre Clases | Con el prompt de G-P-A la IA me fue guiando y preguntando hasta que por mi cuenta pudiera establecer las relaciones correctas| Gemini |
+| 1 | sintaxis en archivos .h | Con el prompt de E-R-A fui aprendiendo y corrigiendo hasta que los errores fueran borrandose. | Gemini |
+| 2 | Sintaxis en archivos .cpp | Con el prompt de E-R-A fui aprendiendo y corrigiendo hasta que los errores fueran borrandose. | Gemini |
+| 3 | Relacion entre Clases | Con el prompt de G-P-A la IA me fue guiando y preguntando hasta que por mi cuenta pudiera establecer las relaciones correctas| Gemini. |
 
 **3.2 Experimentos guiados**
 
 Experimento 1, orden de construcción y destrucción: 1.-Duracion 2.-Pista 3.-Cancion y el orden de destrucción es: 1.-Cancion 2.-Pista 3.-Duracion.
 
-Experimento 2, ¿quién es dueño de quién?: En esta relacion no hay dueño absoluto ya que es un tipo indirecto de relacion, cancion vive dentro del main y mantiene su propia vida
+Experimento 2, ¿quién es dueño de quién?: En esta relacion no hay dueño absoluto ya que es un tipo indirecto de relacion, cancion vive dentro del main y mantiene su propia vida.
 
 Experimento 3, un objeto en dos playlists: El ampersand (&) actúa como el operador de dirección para extraer la ubicación de la canción en el main, mientras que el asterisco (*) actúa en la firma del método como un puntero diseñado para recibir y almacenar dicha dirección.
 
@@ -80,8 +80,8 @@ Experimento 3, un objeto en dos playlists: El ampersand (&) actúa como el opera
 
 | # | Falla o mejora detectada | Qué cambié | Por qué |
 | --- | --- | --- | --- |
-| 1 |  Validador de espacio en titulo | Agrege una validacion de espacios en Pista  | Si hay una entrada vacia y con espacios en el titulo no la valida
-| 2 | Limite de Tiempo | Agrege un validador de tiempo en duracion | Como metodo de control agrege un tope de minutos para podcast y cancion para delimitar la duracion |
+| 1 |  Validador de espacio en titulo | Agrege una validacion de espacios en Pista.  | Si hay una entrada vacia y con espacios en el titulo no la valida.
+| 2 | Limite de Tiempo | Agrege un validador de tiempo en duracion. | Como metodo de control agrege un tope de minutos para podcast y cancion para delimitar la duracion. |
 
 Retos opcionales que intenté: Una buena mejora podria ser categorizar alfabeticamente las pistas en la playlist.
 
