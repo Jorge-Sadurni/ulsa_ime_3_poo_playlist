@@ -12,19 +12,36 @@
 #include "Podcast.h"
 
 // TODO 4.1: declara la clase Playlist.
-//   Atributos privados:
-//     std::string nombre;
-//     std::vector<Cancion*> canciones;
-//     std::vector<Podcast*> podcasts;
-//   Constructor: recibe el nombre.
-//
-// TODO 4.2: declara  bool agregarCancion(Cancion* cancion);
-// TODO 4.3: declara  bool agregarPodcast(Podcast* podcast);
-// TODO 4.4: declara  int cantidadPistas() const;
-// TODO 4.5: declara  Duracion duracionTotal() const;
-// TODO 4.6: declara  void mostrar() const;
+class Playlist
+{
+private:
+    std::string nombre;
+    std::vector<Cancion *> canciones;
+    std::vector<Podcast *> podcasts;
+
+public:
+    // Constructor: recibe el nombre.
+    Playlist(std::string nombre);
+
+    // TODO 4.2: declara  bool agregarCancion(Cancion* cancion);
+    bool agregarCancion(Cancion *cancion);
+
+    // TODO 4.3: declara  bool agregarPodcast(Podcast* podcast);
+    bool agregarPodcast(Podcast *podcast);
+
+    // TODO 4.4: declara  int cantidadPistas() const;
+    int cantidadPistas() const;
+
+    // TODO 4.5: declara  Duracion duracionTotal() const;
+    Duracion duracionTotal() const;
+
+    // TODO 4.6: declara  void mostrar() const;
+    void mostrar() const; //
+};
 //
 // Pregunta: la Playlist no tiene destructor que haga delete de las pistas.
 // ¿Por qué eso es lo correcto en una agregación?
+/* Es lo correcto porque en la agregacion la pista existe independientemente, debido a eso
+si las Playlist se eliminan las pistas siguen existiendo*/
 
 #endif

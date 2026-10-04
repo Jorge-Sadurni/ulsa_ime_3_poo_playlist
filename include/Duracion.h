@@ -4,7 +4,8 @@
 #ifndef DURACION_H
 #define DURACION_H
 
-class Duracion {
+class Duracion
+{
 private:
     int minutos;
     int segundos;
@@ -16,10 +17,14 @@ public:
     int getSegundos() const;
 
     // TODO 1.2: declara  int totalSegundos() const;
+    int totalSegundos() const;
 
     // TODO 1.3: declara  void imprimir() const;
+    void imprimir() const;
+    ~Duracion();
 
     // Pregunta: ¿qué significa el const al final de estos métodos?
+    // El const evita que la funcion modifique los valores internos de la clase Duracion//
 };
 
 #endif
