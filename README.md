@@ -31,6 +31,7 @@ agregarCancion(), agregarPodcast(), totalSegundos(), mostrar(), mostrarInfo(), i
 **2.1 Diagrama de clases**
 
 ![Diagrama de clases](diseño_solucion.png)
+
 **Pista es la clase base mientras que cancion y podcast son clase derivadas (Herencia). Por otro lado, duracion es una clase composicion de Pista y Playlist es una clase de agregacion de Pista.
 
 **2.2 Justificación de cada relación**
@@ -51,7 +52,7 @@ agregarCancion(), agregarPodcast(), totalSegundos(), mostrar(), mostrarInfo(), i
 | --- | --- | --- | --- |
 | 1 | sintaxis en archivos .h | Con el prompt de E-R-A fui aprendiendo y corrigiendo hasta que los errores fueran borrandose. | Gemini |
 | 2 | Sintaxis en archivos .cpp | Con el prompt de E-R-A fui aprendiendo y corrigiendo hasta que los errores fueran borrandose. | Gemini |
-| 3 | Relacion entre Clases | Con el prompt de G-P-A la IA me fue guiando y preguntando hasta que por mi cuenta pudiera establecer las relaciones correctas| Gemini. |
+| 3 | Relacion entre Clases | Con el prompt de G-P-A la IA me fue guiando y preguntando hasta que por mi cuenta pudiera establecer las relaciones correctas.| Gemini. |
 
 **3.2 Experimentos guiados**
 
